@@ -8,6 +8,7 @@
 /* Estilos para el body. */
 body {
     background-color: #21C08B;
+    font-family: 'Muli', sans-serif;
 }
 
 /* Estilos del header. */
@@ -15,6 +16,8 @@ body {
     width: 100%;
     height: 80px;
     background-color: #21C08B;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Estilos del logo. */
@@ -25,21 +28,64 @@ body {
 
 /* Estilos para el contenedor del menú. */
 .header__menu {
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
+/* Estilos para las opciones del perfil. */
 .header__menu ul {
-    /* display: none; */
+    display: none;
     list-style: none;
     padding: 0;
     position: absolute;
-    width: 100px;
+    width: 120px;
     text-align: right;
-    margin: 0 0 0 -14px;
+    margin: 0px 0px 0px 50px;
+}
+
+/* Se agrega el evento para la pseudo clase hover en la lista. */
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+/* Estilos para los elementos de la lsita de opciones del perfil. */
+.header__menu ul li {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* Estolos para los enlaces de los elementos del perfril. */
+.header__menu ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/* Cambio de color de las letras de las opciones de perfil para el evento hover. */
+.header__menu ul li a:hover {
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #21C08B;
 }
 
 /* Estilos para el elemento del perfil. */
 .header__menu--profile {
-    margin-right: 8px;
-    width: 40px;
+    display: flex;
+    margin: 10px 20px 0px 20px;
+    color: #fff;
+    align-items: center;
+}
+
+/* Estilos para los componenes hijo del menú del perfil */
+.header__menu--profile * {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+/* Estilo para el prrafo "Perfil" */
+.header__menu--profile p {
+    font-size: 22px;
 }
