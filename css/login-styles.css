@@ -1,0 +1,147 @@
+ /* Estilos para el la página del lógin */
+
+/* Estilos para la sección la cual contiene el login. */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+/* Estilos para todo el contenedor del login. */
+.login__contenedor {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 60px 68px 40px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+    min-height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Estilos para el formulario. */
+.login__contenedor--from {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la sección del check "Recuérdame". */
+.login__contenedor-recuerdame {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Tamaño de los textos de las etiquetas label y a */
+.login__contenedor-recuerdame label,
+.login__contenedor-recuerdame a,
+.footer a {
+    font-size: 14px;
+}
+
+/* Estilos del enlace para recuperar la contraseña. */
+.login__contenedor-recuerdame a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el evento hover del enlace para recuperar la contraseña. */
+.login__contenedor-recuerdame a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el inicio de sesión por redes sociales. */
+.login__contenedor--social > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los logos del inicio de sesión. */
+.login__contenedor--social > div > i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* Sección de Registro. */
+.login__contenedor--registro {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Enlace de registro. */
+.login__contenedor--registro a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* Al pasar el mouse sobre el enlace del Registro. */
+.login__contenedor--registro a:hover {
+    text-decoration: underline;
+}
+
+/* inputs de Correo y Pass. */
+.input {
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    outline: none;
+    height: 50px;
+}
+
+/* Texto dentro de los inputs. */
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Se agrega para Firefox. */
+}
+
+/* Botón de inicio de sesión */
+.boton {
+    font-family: 'Muli', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+/* Estilos para el footer. */
+.footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+}
+
+/* Enlaces del foooter */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    margin: 30px;
+}
+
+/* Evento al pasar el mouse sobre los enlaces del footer. */
+.footer a:hover {
+    text-decoration: underline;
+}
