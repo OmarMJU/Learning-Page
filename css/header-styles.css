@@ -12,6 +12,7 @@ body {
     background-image: url(../imgs/index.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Muli', sans-serif;
 }
 
