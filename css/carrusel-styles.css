@@ -8,16 +8,19 @@
     padding: 30px;
 }
 
+/* Contenedor para el nombre de la lista. */
 .carrusel__titulo {
     display: flex;
     padding: 15px 0px;
 }
 
+/* Color y tamaño para el titulo de la lista. */
 .carrusel__titulo * {
     color: #fff;
     font-size: 23px;
 }
 
+/* Icono de la lista. */
 .carrusel__titulo i {
     margin: 0px 20px;
 }
