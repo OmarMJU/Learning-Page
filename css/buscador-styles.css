@@ -3,12 +3,18 @@
 /* Se establece la altura de la sección del buscador. */
 .main {
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilos para el título del buscador. */
 .main__title {
     font-size: 25px;
     color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
 }
 
 /* Estilos para la entrada del buscador. */

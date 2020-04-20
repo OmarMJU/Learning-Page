@@ -1,0 +1,20 @@
+/* Estilos para el footer. */
+.footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100px;
+}
+
+/* Enlaces del foooter */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    margin: 30px;
+}
+
+/* Evento al pasar el mouse sobre los enlaces del footer. */
+.footer a:hover {
+    text-decoration: underline;
+}

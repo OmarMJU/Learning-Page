@@ -1,4 +1,4 @@
-/* Estulos para el carrusel. */
+/* Estilos para el carrusel. */
 
 /* Estilos para el contenedor del carrusel. */
 .carrusel {
@@ -6,6 +6,20 @@
     overflow: scroll;
     position: relative;
     padding: 30px;
+}
+
+.carrusel__titulo {
+    display: flex;
+    padding: 15px 0px;
+}
+
+.carrusel__titulo * {
+    color: #fff;
+    font-size: 23px;
+}
+
+.carrusel__titulo i {
+    margin: 0px 20px;
 }
 
 /* Estilos para el conenedro del item. */
