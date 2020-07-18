@@ -1,4 +1,98 @@
-body {
+/* Estilos del Menú y la cabezera. */
+
+/* Quitando estilos default del navegador. */
+* {
     margin: 0;
-    background-color: red;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body. */
+body {
+    background: linear-gradient(#000001, #00A9E0);
+    font-family: 'Muli', sans-serif;
+}
+
+/* Estilos del header. */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #000001;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos del logo. */
+.header__img {
+    width: 200px;
+    margin: 10px 0 0 10px;
+}
+
+/* Estilos para el contenedor del menú. */
+.header__menu {
+    margin-right: 60px;
+}
+
+/* Estilos para las opciones del perfil. */
+.header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 120px;
+    text-align: right;
+    margin: 0px 0px 0px 50px;
+}
+
+/* Se agrega el evento para la pseudo clase hover en la lista. */
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+/* Estilos para los elementos de la lsita de opciones del perfil. */
+.header__menu ul li {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* Estolos para los enlaces de los elementos del perfril. */
+.header__menu ul li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/* Cambio de color de las letras de las opciones de perfil para el evento hover. */
+.header__menu ul li a:hover {
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #00A9E0;
+}
+
+/* Estilos para el elemento del perfil. */
+.header__menu--profile {
+    display: flex;
+    margin: 10px 20px 0px 20px;
+    color: #fff;
+    align-items: center;
+}
+
+/* Estilos para los componenes hijo del menú del perfil */
+.header__menu--profile * {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+/* Estilo para el prrafo "Perfil" */
+.header__menu--profile p {
+    font-size: 22px;
+}
+
+/* Se agrega al color del footer. */
+.footer {
+    background-color: #000001;
 }
