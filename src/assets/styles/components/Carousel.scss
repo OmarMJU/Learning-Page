@@ -1,0 +1,16 @@
+/* Estilos para el carrusel. */
+
+/* Estilos para el contenedor del carrusel. */
+.carrusel {
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+    padding: 30px;
+}
+
+/* Estilos para el conenedro del item. */
+.carrusel__contenedor {
+    white-space: nowrap;
+    margin: 20px;
+    padding-bottom: 10px;
+}
