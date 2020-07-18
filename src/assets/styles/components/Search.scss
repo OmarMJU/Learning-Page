@@ -1,0 +1,42 @@
+/* Estilos para la sección del buscador */
+
+/* Se establece la altura de la sección del buscador. */
+.main {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el título del buscador. */
+.main__title {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+/* Estilos para la entrada del buscador. */
+.input-buscar {
+    border: 2px solid #fff;
+    border-radius: 40px;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 70%;
+    padding: 0px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para el texto de la entrada del buscador. */
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Se agrega para Firefox. */
+}
+
+/* Se quita el borde que se pinta cuando se posiciona el cursor en el elemento. */
+.input-buscar:focus {
+    outline: none;
+}
