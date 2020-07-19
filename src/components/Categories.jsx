@@ -1,10 +1,10 @@
 import React from "react";
 import "../assets/styles/components/Categories.scss";
 
-const Categories = () => (
+const Categories = ({ title, icon }) => (
     <div className="carrusel__titulo">
-        <i className="fas fa-list"></i>
-        <p>Mi Lista</p>
+        <i className={icon}></i>
+        <p>{title}</p>
     </div>
 );
 

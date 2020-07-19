@@ -11,7 +11,21 @@ const App = () => (
     <div className="app">
         <Header/>
         <Search/>
-        <Categories/>
+        <Categories title="Mi lista" icon="fas fa-list" />
+        <Carousel>
+            <CarouselItem/>
+            <CarouselItem/>
+            <CarouselItem/>
+            <CarouselItem/>
+        </Carousel>
+        <Categories title="Tendencias" icon="fas fa-star" />
+        <Carousel>
+            <CarouselItem/>
+            <CarouselItem/>
+            <CarouselItem/>
+            <CarouselItem/>
+        </Carousel>
+        <Categories title="Originales" icon="fas fa-rocket" />
         <Carousel>
             <CarouselItem/>
             <CarouselItem/>
