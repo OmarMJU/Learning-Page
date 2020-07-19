@@ -1,4 +1,6 @@
 /* Estilos del Menú y la cabezera. */
+@import "./Vars.scss";
+@import "./Media.scss";
 
 /* Quitando estilos default del navegador. */
 * {
@@ -9,15 +11,15 @@
 
 /* Estilos para el body. */
 body {
-    background: linear-gradient(#000001, #00A9E0);
-    font-family: 'Muli', sans-serif;
+    background: linear-gradient($color-up, $color_down);
+    font-family: $theme-font;
 }
 
 /* Estilos del header. */
 .header {
     width: 100%;
     height: 80px;
-    background-color: #000001;
+    background-color: $color-up;
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +59,7 @@ body {
 
 /* Estolos para los enlaces de los elementos del perfril. */
 .header__menu ul li a {
-    color: #fff;
+    color: $color_wite;
     display: block;
     text-decoration: none;
     width: 100%;
@@ -69,15 +71,15 @@ body {
     border: 0px;
     padding: 5px 10px;
     border-radius: 8px;
-    background-color: #fff;
-    color: #00A9E0;
+    background-color: $color_wite;
+    color: $color_down;
 }
 
 /* Estilos para el elemento del perfil. */
 .header__menu--profile {
     display: flex;
     margin: 10px 20px 0px 20px;
-    color: #fff;
+    color: $color_wite;
     align-items: center;
 }
 
@@ -94,5 +96,5 @@ body {
 
 /* Se agrega al color del footer. */
 .footer {
-    background-color: #000001;
+    background-color: $color-up;
 }
