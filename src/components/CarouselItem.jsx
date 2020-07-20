@@ -1,16 +1,16 @@
 import React from "react";
 import "../assets/styles/components/CarouselItems.scss";
 
-const CarouselItem = () => (
+const CarouselItem = ({ cover, title, year, contentRating, duration }) => (
     <div className="carrusel-item">
-        <img className="carrusel-item__imagen" src="imgs/01.jpg" alt="Playa" />
+        <img className="carrusel-item__imagen" src={cover} alt={title} />
         <div className="carrusel-item__detalles">
             <div>
                 <i className="fas fa-play"></i>
                 <i className="fas fa-plus-circle"></i>
             </div>
-            <p className="carrusel-item__detalles--titulo">Titulo descriptivo</p>
-            <p className="carrusel-item__detalles--subtitulo">2020 16+ 145 min</p>
+            <p className="carrusel-item__detalles--titulo">{title}</p>
+            <p className="carrusel-item__detalles--subtitulo">{`${year} ${contentRating} ${duration}`}</p>
         </div>
     </div>
 );
