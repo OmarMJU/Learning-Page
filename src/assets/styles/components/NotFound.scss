@@ -1,0 +1,21 @@
+/* Etilos para la página de error. */
+.mainNot {
+    margin: 20px;
+    padding: 20px;
+}
+
+.main__contenedor {
+    display: flex;
+    flex-direction: column;
+    padding: 180px 68px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__contenedor * {
+    color: #fff;
+}
+
+.main__contenedor h1 {
+    font-size: 125px;
+}
