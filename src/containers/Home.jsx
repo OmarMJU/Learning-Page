@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
+import React from "react";
 import Search from "../components/Search";
 import Categories from "../components/Categories";
 import Carousel from "../components/Carousel";
 import CarouselItem from "../components/CarouselItem";
-import Footer from "../components/Footer";
 import useInitialState from "../hooks/useInitialState";
 import "../assets/styles/App.scss";
 
@@ -15,7 +13,6 @@ const Home = () => {
 
     return (
         <div className="app">
-            <Header/>
             <Search/>
 
             {initialState.mylist.length > 0 && <Categories title="Mi lista" icon="fas fa-list" />}
@@ -41,7 +38,6 @@ const Home = () => {
                    initialState.originals.map(item => <CarouselItem key={item.id} { ...item } />) 
                 }
             </Carousel>
-            <Footer/>
         </div>
     );
 }
