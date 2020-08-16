@@ -1,5 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "./routers/App"
+import ReactDOM from "react-dom";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+ReactDOM.render(
+    <Provider>
+        <App/>
+    </Provider>,
+    document.getElementById("app")
+);
