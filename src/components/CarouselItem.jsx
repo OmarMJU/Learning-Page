@@ -1,16 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { setFavorite } from "../acctions";
+import { setFavorite, deleteFavorites } from "../acctions";
 import "../assets/styles/components/CarouselItems.scss";
 
 const CarouselItem = (props) => {
-    const { cover, title, year, contentRating, duration } = props;
+    const { id, cover, title, year, contentRating, duration } = props;
 
     const handleSetFavorites = () => {
         props.setFavorite({
-            cover, title, year, contentRating, duration
+            id, cover, title, year, contentRating, duration
         });
+    }
+
+    const handleDeleteFavorites = (itemId) => {
+        props.deleteFavorites(itemId);
     }
 
     return (
@@ -20,6 +24,7 @@ const CarouselItem = (props) => {
                 <div>
                     <i className="fas fa-play"></i>
                     <i className="fas fa-plus-circle" onClick={handleSetFavorites}></i>
+                    <i className="fas fa-trash-alt" onClick={() => handleDeleteFavorites(id)}></i>
                 </div>
                 <p className="carrusel-item__detalles--titulo">{title}</p>
                 <p className="carrusel-item__detalles--subtitulo">{`${year} ${contentRating} ${duration}`}</p>
@@ -29,7 +34,8 @@ const CarouselItem = (props) => {
 };
 
 const mapDispatchToProps = {
-    setFavorite
+    setFavorite,
+    deleteFavorites
 }
 
 CarouselItem.propTypes = {
