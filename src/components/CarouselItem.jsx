@@ -5,7 +5,7 @@ import { setFavorite, deleteFavorites } from "../acctions";
 import "../assets/styles/components/CarouselItems.scss";
 
 const CarouselItem = (props) => {
-    const { id, cover, title, year, contentRating, duration } = props;
+    const { id, cover, title, year, contentRating, duration, isList } = props;
 
     const handleSetFavorites = () => {
         props.setFavorite({
@@ -23,8 +23,11 @@ const CarouselItem = (props) => {
             <div className="carrusel-item__detalles">
                 <div>
                     <i className="fas fa-play"></i>
-                    <i className="fas fa-plus-circle" onClick={handleSetFavorites}></i>
-                    <i className="fas fa-trash-alt" onClick={() => handleDeleteFavorites(id)}></i>
+                    {
+                        isList ? 
+                        <i className="fas fa-trash-alt" onClick={() => handleDeleteFavorites(id)}></i> :
+                        <i className="fas fa-plus-circle" onClick={handleSetFavorites}></i> 
+                    }
                 </div>
                 <p className="carrusel-item__detalles--titulo">{title}</p>
                 <p className="carrusel-item__detalles--subtitulo">{`${year} ${contentRating} ${duration}`}</p>
