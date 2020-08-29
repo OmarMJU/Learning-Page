@@ -1,8 +1,10 @@
+import { connect } from "react-redux";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { registrerRequest } from "../acctions";
 import "../assets/styles/components/Login.scss";
 
-const Registrer = () => {
+const Registrer = props => {
     const [form, setValues] = useState({
         email: "",
         name: "",
@@ -18,7 +20,8 @@ const Registrer = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log(form);
+        props.registrerRequest(form);
+        props.history.push("/");
     };
 
     return (
@@ -40,4 +43,8 @@ const Registrer = () => {
     );
 }
 
-export default Registrer;
+const mapDispatchToProps = {
+    registrerRequest
+};
+
+export default connect(null, mapDispatchToProps)(Registrer);
