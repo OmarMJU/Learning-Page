@@ -82,6 +82,13 @@
     align-items: center;
 }
 
+.header__menu--profile img {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+}
+
 /* Estilos para los componenes hijo del menú del perfil */
 .header__menu--profile * {
     margin: 10px 5px;
