@@ -1,14 +1,24 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 /* Estilos para el footer. */
+
 .footer {
     display: flex;
     width: 100%;
     align-items: center;
     height: 100px;
+    background-color: $color-up;
 }
+
+.isLoginF, .isRegistrerF {
+    background-color: transparent;
+}
+
 
 /* Enlaces del foooter */
 .footer a {
-    color: #fff;
+    color: $color_wite;
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     margin: 30px;

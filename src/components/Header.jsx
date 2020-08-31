@@ -1,20 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import gravatar from "../utils/gravatar";
 import { logoutRequest } from "../acctions";
+import "../assets/styles/components/Header.scss";
 
 const Header = props => {
-    const { user } = props;
+    const { user, isLogin, isRegistrer } = props;
     const hasUser = Object.keys(user).length > 0;
 
     const handleLogout = () => {
         props.logoutRequest({});
     };
 
+    const headerClass = classNames("header", {
+        isLogin,
+        isRegistrer
+    });
+
     return (
-        <header className="header">
+        <header className={headerClass}>
             <Link to="/">
                 <img className="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="Imagen de PlatziVideo" />
             </Link>

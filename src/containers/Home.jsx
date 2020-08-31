@@ -1,14 +1,17 @@
 import React from "react";
+import "../assets/styles/App.scss";
 import { connect } from "react-redux";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Search from "../components/Search";
 import Carousel from "../components/Carousel";
 import Categories from "../components/Categories";
 import CarouselItem from "../components/CarouselItem";
-import "../assets/styles/App.scss";
 
 const Home = ({ myList, trends, originals }) => {
     return (
         <div className="app">
+            <Header/>
             <Search/>
 
             {myList.length > 0 && <Categories title="Mi lista" icon="fas fa-list" />}
@@ -34,6 +37,8 @@ const Home = ({ myList, trends, originals }) => {
                    originals.map(item => <CarouselItem key={item.id} { ...item } />) 
                 }
             </Carousel>
+            
+            <Footer/>
         </div>
     );
 }

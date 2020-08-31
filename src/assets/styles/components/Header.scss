@@ -1,5 +1,7 @@
 /* ESTILOS PARA EL LOGIN Y EL SINUP. */
 /* Estilos del Menú y la cabezera. */
+@import "../Vars.scss";
+@import "../Media.scss";
 
 /* Quitando estilos default del navegador. */
 * {
@@ -8,24 +10,85 @@
     box-sizing: border-box;
 }
 
-/* Estilos para el body. */
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'Muli', sans-serif;
-}
-
 /* Estilos del header. */
 .header {
     width: 100%;
     height: 80px;
+    background-color: $color-up;
     display: flex;
     justify-content: space-between;
+}
+   
+.isLogin, .isRegistrer {
+    background-color: transparent;
 }
 
 /* Estilos del logo. */
 .header__img {
     width: 200px;
     margin: 10px 0 0 10px;
+}
+
+/* Estilos para el contenedor del menú. */
+.header__menu {
+    margin-right: 60px;
+}
+
+/* Estilos para las opciones del perfil. */
+.header__menu ul {
+    display: none;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 120px;
+    text-align: right;
+    margin: 0px 0px 0px 50px;
+}
+
+/* Se agrega el evento para la pseudo clase hover en la lista. */
+.header__menu:hover ul, ul:hover {
+    display: block;
+}
+
+/* Estilos para los elementos de la lsita de opciones del perfil. */
+.header__menu ul li {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+/* Estolos para los enlaces de los elementos del perfril. */
+.header__menu ul li a {
+    color: $color_wite;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+/* Cambio de color de las letras de las opciones de perfil para el evento hover. */
+.header__menu ul li a:hover {
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: $color_wite;
+    color: $color-up;
+}
+
+/* Estilos para el elemento del perfil. */
+.header__menu--profile {
+    display: flex;
+    margin: 10px 20px 0px 20px;
+    color: $color_wite;
+    align-items: center;
+}
+
+/* Estilos para los componenes hijo del menú del perfil */
+.header__menu--profile * {
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+/* Estilo para el prrafo "Perfil" */
+.header__menu--profile p {
+    font-size: 22px;
 }
