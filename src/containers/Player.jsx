@@ -14,9 +14,7 @@ const Player = props => {
 
     return hasPlaying ? (
         <div className="player">
-            <video controls autoPlay>
-                <source src={props.playing.source} type="video/mp4"/>
-            </video>
+            <iframe src={props.playing.source} frameBorder="0"></iframe>
             <div className="Player-back">
                 <button type="button" onClick={() => props.history.goBack()}>Regresar</button>
             </div>
