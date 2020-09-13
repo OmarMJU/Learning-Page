@@ -113,6 +113,19 @@ const initialState = {
             "cover": "https://www.laestadea.com/wp-content/uploads/2016/11/steven-wilson-y-el-video-de-happy-returns.jpg",
             "description": "Vestibulum ac est lacinia nisi venenatis tristique",
             "source": "https://www.youtube.com/embed/l7uls7grg5Y?autoplay=1"
+        },
+        {
+            "id": 27,
+            "slug": "tvshow-7",
+            "title": "Goin Home",
+            "type": "Music",
+            "language": "English",
+            "year": 2013,
+            "contentRating": "16+",
+            "duration": 507,
+            "cover": "https://i.ytimg.com/vi/U9e15YIRrhk/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDcyMbG7ms0IsgkXc2ttICHA3Ge_A",
+            "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+            "source": "https://www.youtube.com/embed/U9e15YIRrhk?autoplay=1"
         }
     ],
     "originals": [

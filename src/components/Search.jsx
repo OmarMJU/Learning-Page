@@ -1,11 +1,39 @@
 import React from "react";
+import { connect } from "react-redux";
 import "../assets/styles/components/Search.scss";
 
-const Search = () => (
-    <section className="main">
-        <h2 className="main__title">&iquest;Qu&eacute; quieres ver hoy?</h2>
-        <input className="input-buscar" type="text" placeholder="Buscar..." />
-    </section>
-);
+const Search = props => {
+    const { trends, originals } = props;
+    const allVideos = trends.concat(originals);
 
-export default Search;
+    const handleSearch = event => {
+        const keyCode = event.key;
+        const titleName = idSearch.value;
+
+        if(keyCode === "Enter") {
+            const nameVideos = allVideos.filter(video => {
+                if (video.title.toLowerCase().includes(titleName.toLowerCase())) {
+                    return video;
+                }
+            });
+
+            console.log(nameVideos);
+        }
+    };
+
+    return (
+        <section className="main">
+            <h2 className="main__title">&iquest;Qu&eacute; quieres ver hoy?</h2>
+            <input id="idSearch" className="input-buscar" type="text" placeholder="Buscar..." onKeyUp={handleSearch} />
+        </section>
+    );
+}
+
+const mapStateToProps = state => {
+    return {
+        trends: state.trends,
+        originals: state.originals
+    };
+};
+
+export default connect(mapStateToProps, null)(Search);
