@@ -8,11 +8,22 @@ import Carousel from "../components/Carousel";
 import Categories from "../components/Categories";
 import CarouselItem from "../components/CarouselItem";
 
-const Home = ({ myList, trends, originals }) => {
+const Home = ({ myList, trends, originals, serching }) => {
     return (
         <div className="app">
             <Header/>
             <Search/>
+
+            {serching.length > 0 && <Categories title="Busqueda" icon="fas fa-search" />}
+            {/*
+                serching.length > 0 && 
+                    <Carousel>
+                        {
+                            console.log("Desde el Home", serching),
+                            serching.map(item => <CarouselItem key={item.id} { ...item }/>)
+                        }
+                    </Carousel>
+                    */}
 
             {myList.length > 0 && <Categories title="Mi lista" icon="fas fa-list" />}
             {
@@ -47,7 +58,8 @@ const mapStoreToProps = state => {
     return {
         myList: state.myList,
         trends: state.trends,
-        originals: state.originals
+        originals: state.originals,
+        serching: state.serching
     }
 };
 

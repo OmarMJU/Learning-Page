@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { setFavorite, deleteFavorites } from "../acctions";
 import "../assets/styles/components/CarouselItems.scss";
 
-const CarouselItem = (props) => {
+const CarouselItem = props => {
     const { id, cover, title, year, contentRating, duration, isList } = props;
 
     const handleSetFavorites = () => {

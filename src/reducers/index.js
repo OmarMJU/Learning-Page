@@ -31,7 +31,12 @@ const reducer = (state, action) => {
                 playing: state.trends.find(item => item.id === Number(action.payload)) ||
                 state.originals.find(item => item.id === Number(action.payload)) ||
                 []
-            }
+             }
+        case "SET_SERCHING":
+            return {
+                ...state,
+                serching: [action.payload]
+            } 
         default:
             return state;
     }

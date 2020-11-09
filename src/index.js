@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 const initialState = {
     "user": {},
     "playing": {},
+    "serching": [],
     "myList": [],
     "trends": [
         {

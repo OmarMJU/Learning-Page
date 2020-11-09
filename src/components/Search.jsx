@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { setSerching } from "../acctions";
 import "../assets/styles/components/Search.scss";
 
 const Search = props => {
@@ -17,7 +18,7 @@ const Search = props => {
                 }
             });
 
-            console.log(nameVideos);
+            props.setSerching(nameVideos);
         }
     };
 
@@ -36,4 +37,8 @@ const mapStateToProps = state => {
     };
 };
 
-export default connect(mapStateToProps, null)(Search);
+const mapDispatchToProps = {
+    setSerching
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Search);
