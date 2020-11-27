@@ -211,15 +211,15 @@ const initialState = {
         {
             "id": 24,
             "slug": "tvshow-7",
-            "title": "Syndi Nicole",
-            "type": "Funny",
+            "title": "Arms Of A Woman",
+            "type": "Musik",
             "language": "English",
-            "year": 2020,
+            "year": 2009,
             "contentRating": "16+",
-            "duration": 209,
-            "cover": "https://p16-va-default.akamaized.net/img/musically-maliva-obj/1663573295818758~c5_720x720.jpeg",
+            "duration": 413,
+            "cover": "https://i.ytimg.com/vi/Th4SwSpaRWU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCGnLgK4se3gN2ZtAAm8gTKRykRVQ",
             "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-            "source": "https://www.youtube.com/embed/ZNPzHDoddr8?autoplay=1"
+            "source": "https://www.youtube.com/embed/Th4SwSpaRWU?autoplay=1"
         },
         {
             "id": 25,
