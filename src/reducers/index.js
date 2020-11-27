@@ -35,7 +35,7 @@ const reducer = (state, action) => {
         case "SET_SERCHING":
             return {
                 ...state,
-                serching: [action.payload]
+                serching: action.payload
             } 
         default:
             return state;

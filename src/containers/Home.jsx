@@ -15,15 +15,14 @@ const Home = ({ myList, trends, originals, serching }) => {
             <Search/>
 
             {serching.length > 0 && <Categories title="Busqueda" icon="fas fa-search" />}
-            {/*
+            {
                 serching.length > 0 && 
                     <Carousel>
                         {
-                            console.log("Desde el Home", serching),
                             serching.map(item => <CarouselItem key={item.id} { ...item }/>)
                         }
                     </Carousel>
-                    */}
+            }
 
             {myList.length > 0 && <Categories title="Mi lista" icon="fas fa-list" />}
             {

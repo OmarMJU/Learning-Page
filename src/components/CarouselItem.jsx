@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { setFavorite, deleteFavorites } from "../acctions";
+import { Link } from "react-router-dom";
 import "../assets/styles/components/CarouselItems.scss";
+import { setFavorite, deleteFavorites } from "../acctions";
 
 const CarouselItem = props => {
     const { id, cover, title, year, contentRating, duration, isList } = props;
@@ -14,7 +14,7 @@ const CarouselItem = props => {
         });
     }
 
-    const handleDeleteFavorites = (itemId) => {
+    const handleDeleteFavorites = itemId => {
         props.deleteFavorites(itemId);
     }
 
