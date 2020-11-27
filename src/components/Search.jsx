@@ -11,7 +11,7 @@ const Search = props => {
         const keyCode = event.key;
         const titleName = idSearch.value;
 
-        if(keyCode === "Enter") {
+        if(keyCode === "Enter" && titleName !== "") {
             const nameVideos = allVideos.filter(video => {
                 if (video.title.toLowerCase().includes(titleName.toLowerCase())) {
                     return video;
